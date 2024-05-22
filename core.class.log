@@ -1,0 +1,92 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5217821482766@s.whatsapp.net',
+    fromMe: false,
+    id: '582866735B3944FFFD47C2D315C1239B',
+    participant: undefined
+  },
+  messageTimestamp: 1716328341,
+  pushName: 'Oshkarr!🤘🏻',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Buenas tardes',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Buenas tardes',
+  from: '5217821482766'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7017499c-51a4-48ae-9fab-687f2c83a4ac',
+  keyword: 'key_74a971ee-f767-4f24-91ed-e3f333a22565',
+  answer: '*Cima del Tajín* Tu Asistente virtual.\n' +
+    'Bienvenido a _CimaWhats_, ¿ya conoces nuestra dinamica del día de las madres?, cosulta como puedes participar en la opción 8 del menú o en nuestro Facebook https://atom.bio/cima_del_tajin\n' +
+    ' \n' +
+    '*¿En que puedo ayudarte? escribe una opción 🤔*\n' +
+    ' \n' +
+    ' \n' +
+    ' 1️⃣ *Facturación por WhastApp*\n' +
+    ' 2️⃣ *Facturación en linea*\n' +
+    ' 3️⃣ *Correcciónes de facturas*\n' +
+    ' 4️⃣ *Contacto*\n' +
+    ' 5️⃣ *Sugerencias o Queja*\n' +
+    ' 6️⃣ *Localiza tu estación*\n' +
+    ' 7️⃣ *Informes de vacantes*\n' +
+    ' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 2000,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ebff32986dc234ab634410cc9be2faf3'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5215539667140@s.whatsapp.net',
+    fromMe: false,
+    id: 'C7CEE97714EE29D70D5E286C43ED0490',
+    participant: undefined
+  },
+  messageTimestamp: 1716329637,
+  pushName: 'Betyka',
+  broadcast: false,
+  message: Message {
+    conversation: 'Muchas gracias',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  status: 4,
+  body: 'Muchas gracias',
+  from: '5215539667140'
+}
