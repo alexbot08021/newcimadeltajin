@@ -285,15 +285,17 @@ const flowPrincipal = addKeyword(['bien dia','hola buen','bue','tarde','dias','V
                 //'*Soy tu Asistente Virtual* 🧐',
                 //'*¿En que puedo ayudarte?🤔*', 
             //])
+  
             .addAnswer(
-                [
+                [   
+                  
                     '*Cima del Tajín* Tu Asistente virtual.',
                     'Bienvenido a _CimaWhats_, ¿ya conoces nuestra dinamica del día de las madres?, cosulta como puedes participar en la opción 8 del menú o en nuestro Facebook https://atom.bio/cima_del_tajin',
                     ' ',
                     '*¿En que puedo ayudarte? escribe una opción 🤔*',
                     ' ',
                     ' ',
-                
+                    
             
                ' 1️⃣ *Facturación por WhastApp*', 
                ' 2️⃣ *Facturación en linea*',
@@ -306,8 +308,8 @@ const flowPrincipal = addKeyword(['bien dia','hola buen','bue','tarde','dias','V
                ///' 9️⃣ *Terminos y condiciones Presume tu Nave*', 
               
             ],
+            { media: 'https://i.imgur.com/wXugwrc.png' },
             {delay:2000},
-            null,
             [flow1,flow2,flow3,flow4,flow5,flow6,flow7,flow8]
             ,)
             

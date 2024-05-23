@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5217821482766@s.whatsapp.net',
     fromMe: false,
-    id: '582866735B3944FFFD47C2D315C1239B',
+    id: 'D5ECAB5AAF051D556ABB2D6A2FEFE245',
     participant: undefined
   },
-  messageTimestamp: 1716328341,
+  messageTimestamp: 1716504142,
   pushName: 'Oshkarr!🤘🏻',
   broadcast: false,
   message: Message {
@@ -24,8 +24,8 @@
   from: '5217821482766'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_7017499c-51a4-48ae-9fab-687f2c83a4ac',
-  keyword: 'key_74a971ee-f767-4f24-91ed-e3f333a22565',
+  ref: 'ans_0ca4846d-a21d-4225-a8fe-73f29fb00b79',
+  keyword: 'key_21bbf312-55e6-4a2c-beb4-7c7478e82bb0',
   answer: '*Cima del Tajín* Tu Asistente virtual.\n' +
     'Bienvenido a _CimaWhats_, ¿ya conoces nuestra dinamica del día de las madres?, cosulta como puedes participar en la opción 8 del menú o en nuestro Facebook https://atom.bio/cima_del_tajin\n' +
     ' \n' +
@@ -41,11 +41,11 @@
     ' 7️⃣ *Informes de vacantes*\n' +
     ' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*',
   options: {
-    media: null,
+    media: 'https://i.imgur.com/wXugwrc.png',
     buttons: [],
     capture: false,
     child: null,
-    delay: 2000,
+    delay: 0,
     idle: null,
     ref: null,
     nested: [
@@ -65,28 +65,7 @@
       [Object], [Object], [Object]
     ],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: 'ebff32986dc234ab634410cc9be2faf3'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5215539667140@s.whatsapp.net',
-    fromMe: false,
-    id: 'C7CEE97714EE29D70D5E286C43ED0490',
-    participant: undefined
-  },
-  messageTimestamp: 1716329637,
-  pushName: 'Betyka',
-  broadcast: false,
-  message: Message {
-    conversation: 'Muchas gracias',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Muchas gracias',
-  from: '5215539667140'
+  refSerialize: 'e1aacb98c2cc025da8b20ea5ff6703bc'
 }
