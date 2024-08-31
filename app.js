@@ -292,7 +292,7 @@ const flowPrincipal = addKeyword(['bien dia','hola buen','bue','tarde','dias','V
                 [   
                   
                     '*Cima del Tajín* Tu Asistente virtual.',
-                    'Bienvenido a _CimaWhats_, ¿ya conoces nuestra dinamica del día de las madres?, cosulta como puedes participar en la opción 8 del menú o en nuestro Facebook https://atom.bio/cima_del_tajin',
+                    '-¡Hola! Soy Nimbe tu asistente virtual, para ayudarte a realizar tu factura por favor enviame:',
                     ' ',
                     '*¿En que puedo ayudarte? escribe una opción 🤔*',
                     ' ',
@@ -306,16 +306,21 @@ const flowPrincipal = addKeyword(['bien dia','hola buen','bue','tarde','dias','V
                ' 5️⃣ *Sugerencias o Queja*',
                ' 6️⃣ *Localiza tu estación*',
                ' 7️⃣ *Informes de vacantes*',
-               ' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*', 
+               ///' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*', ///
                ///' 9️⃣ *Terminos y condiciones Presume tu Nave*', 
               
             ],
-            { media: 'https://i.imgur.com/wXugwrc.png' },
+            { media: 'https://i.imgur.com/vWO6Ffn.png' },
             {delay:2000},
             [flow1,flow2,flow3,flow4,flow5,flow6,flow7,flow8]
             ,)
             
 /////////////////////////////////////////////////////////////////////SUB MENU ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////SUB MENU ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 const flowsecundario = addKeyword('menu')
 .addAnswer('*¿En que más puedo ayudarte?* 🧐',{delay:400})
@@ -331,7 +336,7 @@ const flowsecundario = addKeyword('menu')
        ' 5️⃣ *Sugerencias o Queja*',
        ' 6️⃣ *Localiza tu estación*',
        ' 7️⃣ *Informes de vacantes*',
-       ' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*', 
+       ///' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*', 
        ///' 9️⃣ *Terminos y condiciones Presume tu Nave*', 
 
         ],
@@ -343,135 +348,7 @@ const flowsecundario = addKeyword('menu')
     ///////////////////////////////////////////////////////////**FLOW DE RESPUESTA AUTOMATICA**/////////////////////////////////////////////////////////////
 
 
-const flowTerminos = addKeyword('terminos','condiciones')
-.addAnswer('*Cima del Tajín, 19 Aniversario*')
-.addAnswer('En cada carga de $250.00 o más ganas un boleto para particiar en nuestra rifa donde tendremos muchas sorpresas, quedate al pendiente de nuestras redes sociales')
-.addAnswer('*TERMINOS Y CONDICIONES CIMA DEL TAJÍN*')
-.addAnswer('*1.-* La rifa se llevará a cabo en la Gasolinera "Cima del Tajín Coatzintla" como parte de una promoción especial de 19 Aniversario para nuestros clientes.')
-.addAnswer('*2.-* Todos los clientes que realicen una compra en efectivo, tarjeta de débito o tarjeta de crédito (excluyendo a los clientes que soliciten crédito) de combustible en la gasolinera "Cima del Tajín" durante el período de la promoción serán elegibles para participar en la rifa.')
-.addAnswer('*3.-* La promoción está abierta a todos los clientes mayores de 18 años que cumplan con los requisitos establecidos en estos términos y condiciones, y que no hayan solicitado crédito como forma de pago.')
-.addAnswer('*4.-* Los clientes deben proporcionar su información de contacto válida al realizar la compra para poder participar en la rifa.')       
-.addAnswer('*5.-* No podrán participar en la rifa los empleados de la gasolinera "Cima del Tajín" ni sus familiares directos.')
-.addAnswer('*6.-* La rifa se llevará a cabo de forma aleatoria y transparente en la fecha especificada en la promoción.')
-.addAnswer('*7.-* El ganador será notificado por teléfono utilizando la información proporcionada al participar en la rifa.')
-.addAnswer('*8.-* El ganador deberá reclamar su premio en un plazo de [2 días] a partir de la notificación. En caso de no reclamar el premio dentro de este período, se seleccionará a un nuevo ganador.')
-.addAnswer('*9.-* La gasolinera "Cima del Tajín" se reserva el derecho de modificar o cancelar la promoción en cualquier momento sin previo aviso si surgen circunstancias imprevistas o fuera de su control.')
-.addAnswer('*10.-* Al participar en la rifa, los clientes aceptan plenamente estos términos y condiciones.')
-.addAnswer('Siguenos en nuestras redes sociales https://atom.bio/cima_del_tajin')
-.addAnswer('si desea regresar al menu escriba *MENU*'
-    ,
-    null,
-    null,
-    )
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const flowpresumetunave = addKeyword('Tarjeta','Gasolina')
-.addAnswer('*Términos y Condiciones del Concurso "Cima del Tajín: PRESUME TU NAVE"*')
-.addAnswer(
-    [
-        '*1. Elegibilidad:*',
-'*•*	El concurso está abierto a propietarios de vehículos que deseen participar en la competencia.',
-'*•*	Los concursantes deben ser mayores de 18 años o contar con el consentimiento de un padre o tutor.',
-'*•*	Solo se aceptarán vehículos que estén registrados a nombre del concursante.',
-    ],{delay:500})
-.addAnswer(
-    [
-        '*2. Mecánica del Concurso:*',
-'*•*	Los participantes deben enviar una foto de su vehículo al WhatsApp oficial del concurso en las redes sociales de Cima del Tajín.',
-'*•*	Deberán seguir nuestro canal de WhatsApp, Facebook, Instagram y  TikTok incluidos en el siguiente enlace  https://atom.bio/cima_del_tajin',
-'*•*	Los ganadores se determinarán según la cantidad de reacciones y comentarios recibidos en la publicación de su vehículo.',
-'*•*	Se permitirá una única participación por concursante.',
-'*•*	Los participantes pueden invitar a sus amigos a reaccionar y comentar en la publicación de su vehículo para aumentar sus probabilidades de ganar.',
-    ],{delay:550})
-.addAnswer(
-    [
-         '*3. Fecha y Presentación:*',
-'*•*	Los concursantes seleccionados deberán presentarse en la estación el día del evento el 20 de abril de 2024, en Cima del Tajín Coatzintla, Veracruz, México.',
-'*•*	Se requiere que los participantes estén presentes en el lugar designado al menos una hora antes del inicio del evento.',
-'*•*	Los participantes deben estar disponibles para participar en actividades relacionadas con el concurso y la exhibición de sus vehículos durante la duración del evento.',
-    ],{delay:600})
-.addAnswer(
-    [
-        '*4. Premiación:*',
-'*•*	El ganador será anunciado durante el evento del 19 aniversario de Cima del Tajín, que se llevará a cabo el 20 de abril de 2024.',
-'*•*	El premio será otorgado al participante cuyo vehículo haya recibido la mayor cantidad de reacciones y comentarios en la publicación oficial del concurso.',
-'*•*	El premio es intransferible y no puede ser canjeado por efectivo u otros premios.',
-    ],{delay:650})
-.addAnswer(
-    [
-        '*5. Derechos de Imagen:*',
-'*•*	Al participar en el concurso, los concursantes otorgan a Cima del Tajín el derecho de utilizar imágenes de su vehículo y su nombre en materiales promocionales relacionados con el evento, sin compensación adicional.',
-'*•*	Cima del Tajín se reserva el derecho de descalificar a cualquier participante que incumpla estos términos y condiciones.',
-    ],{delay:700})
-.addAnswer(
-    [
-        '*6. Aceptación de los Términos y Condiciones:*',
-'*•*	La participación en el concurso implica la aceptación total de estos términos y condiciones.',
-'*•*	Cualquier disputa relacionada con el concurso será resuelta por Cima del Tajín y su decisión será definitiva.',
-'Al participar en el concurso "Cima del Tajín: Presume Tu Nave", los concursantes están de acuerdo con todos los términos y condiciones establecidos anteriormente.',
-    ],{delay:750})
-.addAnswer('_¿Quieres conocer todos nuestros servicios?_, escribe *MENU*',{delay:770})
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-const flowanecdota = addKeyword('Mi anécdota favorita como mamá...')
-    .addAnswer('Términos y Condiciones del Concurso "*Tu anécdota favorita como mamá*"')
-    .addAnswer([
-        '*1. Organizador del Concurso*',
-        '*•* El concurso "Tu anécdota favorita como mamá" es organizado por la gasolinera Cima del Tajín.',
-             ],{delay:500})
-    .addAnswer([
-        '*2. Elegibilidad*',
-        '*•* El Concurso está abierto solo a mamás.',
-        '*•* Los empleados del Organizador y sus familiares directos son elegibles para participar, excepto personal administrativo.',
-            ],{delay:550})
-    .addAnswer([
-        '*3. Duración del Concurso*',
-        '*•* El Concurso comienza el 03 de mayo 2024 y termina el 24 de mayo de 2024',
-        '*•* Todas las participaciones deben ser recibidas antes de la fecha de finalización para ser consideradas.',
-        '*•* Fecha de anuncio del ganador 25 de mayo de 2024',
-            ],{delay:600})
-    .addAnswer([
-        '*4. Cómo Participar*',
-        '*•* Para participar, los concursantes deben enviar su "anécdota favorita como mamá" a través de WhatsApp antes de la fecha de finalización.',
-        '*•* Los concursantes deben compartirnos una foto de su familia con la que crean poder ganar.',
-        '*•*	Deberán seguir nuestro canal de WhatsApp, Facebook, Instagram y  TikTok incluidos en el siguiente enlace  https://atom.bio/cima_del_tajin',
-        '*•*	Los participantes pueden invitar a sus amigos a reaccionar y comentar en la publicación de su vehículo para aumentar sus probabilidades de ganar.',
-        '*•* Se prohíbe el uso de bots u otros métodos automatizados para participar. Cualquier uso de estos métodos resultará en la descalificación inmediata del participante.',
-            ],{delay:650})
-    .addAnswer([
-        '*5. Criterios de Selección*',
-        '*•* Las anécdotas serán evaluadas por un panel de jueces seleccionados por el Organizador.',
-        '*•* Los criterios de evaluación incluyen la originalidad, la creatividad y la calidad de la anécdota.',
-            ],{delay:700})
-    .addAnswer([
-        '*6. Uso del Material Enviado*',
-        '*•* Al enviar una anécdota, los participantes otorgan al Organizador el derecho no exclusivo, transferible y libre de regalías para usar, reproducir, modificar, publicar, distribuir y mostrar su anécdota en cualquier medio de comunicación.',
-        '*•* Al participar enviando su fotografía, los participantes autorizan de manera expresa al organizador a hacer uso del derecho de uso de imagen.',
-        '*•* El participante es responsable de contar con la autorización de sus familiares que aparezcan en la imagen, en caso de controversia con terceros, el participante dejará en paz y salvo al organizador',
-        '*•* Los participantes declaran y garantizan que el contenido enviado es original y no infringe los derechos de autor ni los derechos de terceros.',
-            ],{delay:750})
-    .addAnswer([
-        '*7. Premios*',
-        '*•* 1er lugar: Una smart tv de 32 pulgadas.',
-        '*•* 2do lugar: $1,000.00 pesos en vales de despesa de la canasta basica (No aplica cerveza, cigarros o licores) para canjear en sucursales Hi Bye',
-        '*•* 3er lugar: $500.00 pesos en vales de despesa de la canasta basica (No aplica cerveza, cigarros o licores) para canjear en sucursales Hi Bye',
-        '*•* Los ganadores serán notificados a través de WhatsApp y deben responder dentro de 1 día para reclamar su premio.',
-            ],{delay:800})
-    .addAnswer([
-        '*8. Privacidad*',
-        '*•* El Organizador recopilará y tratará los datos personales de los participantes de acuerdo con su política de privacidad.'
-            ],{delay:850})
-    .addAnswer([
-        '*9. Aceptación de los Términos y Condiciones*',
-        '*•* Al participar en el Concurso, los participantes aceptan estos términos y condiciones.',
-        '*•* El Organizador se reserva el derecho de modificar estos términos y condiciones en cualquier momento y a su entera discreción.',
-            ],{delay:900})
-   
-    .addAnswer([
-        ' ',
-        '_¿Quieres conocer todos nuestros servicios?_, escribe *MENU*',
-        ' ',
-            ],{delay:920})
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -505,7 +382,7 @@ const flowquejas = addKeyword('platicanos tu sugerencia o queja')
 
     const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal,flowsecundario,flowanecdota,flowquejas])
+    const adapterFlow = createFlow([flowPrincipal,flowsecundario,flowquejas])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
