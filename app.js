@@ -12,20 +12,22 @@ const flowgracias = addKeyword('gracias')
 
 
 const flow1 = addKeyword('1')
-    .addAnswer('Para realizar tu factura por favor enviame:')
-    .addAnswer('Una foto de tu ticket 📝')          
-    .addAnswer('Una foto de tu baucher 📄')        
-    .addAnswer('Constancia de situación fiscal actualizada 🧾')
-    .addAnswer('y un correo electronico 📧')
-    .addAnswer('Uno de nuestros asesores te apoyara lo más rápido posible, gracias 🧑🏼‍🔧')
-    .addAnswer('agradecemos su preferencia')
     .addAnswer([
-        ' ',
-        'si desea regresar al menu escriba *MENU*',
+                '*Para realizar tu factura por favor enviame:*',
+                ' ',
+                '- Una foto de tu ticket 📝',
+                '- Una foto de tu baucher 📄',
+                '- Constancia de situación fiscal actualizada 🧾',
+                '- y un correo electronico 📧',
+                '- Uno de nuestros asesores te apoyara lo más rápido posible, gracias 🧑🏼‍🔧',
+                '- agradecemos su preferencia',
+                ' ',
+                'si desea regresar al menu escriba *MENU*',
                ]
         ,
         null,
         null,
+        
         [flowgracias]
         ,
         )
@@ -77,8 +79,6 @@ const flow5 = addKeyword('5')
         
     })
     
-//
-//
 
 
     .addAnswer('revisaremos su caso detalladamente y trabajaremos para resolverlo', {delay:90000})
@@ -91,14 +91,13 @@ const flow5 = addKeyword('5')
         null
             )
 
-const flow8021 = addKeyword('1')
-            .addAnswer('Cima del Tajín agradece tu preferencia')
-            .addAnswer('Encuentra tu estación en el siguiente enlace')
-            .addAnswer('https://maps.app.goo.gl/WRLDKgMmARCRaPSB8')
-            .addAnswer([
-                ' ',
-                'si desea regresar al menu escriba *MENU*',
-            ])
+const flow6 = addKeyword('6')
+            .addAnswer('Hola, indicanos que gasolinera estas buscando')
+            .addAnswer('Te redirigiremos a google maps')
+          
+            .addAnswer('*CIMA COATZINTLA*                                                                    Encuentra tu estación en el siguiente enlace https://maps.app.goo.gl/WRLDKgMmARCRaPSB8 ',
+                { media: 'https://i.imgur.com/aVIS0Mz.png' }
+                         )
 
 const flow11215 = addKeyword('2')
             .addAnswer('Cima del Tajín agradece tu preferencia')
@@ -127,28 +126,6 @@ const flow12712 = addKeyword('4')
                 'si desea regresar al menu escriba *MENU*',
             ])
 
-const flow6 = addKeyword('6')
-            .addAnswer('Hola, indicanos que gasolinera estas buscando')
-            .addAnswer('Te redirigiremos a google maps')
-            .addAnswer(
-            
-            [
-                ' 1️⃣ CIMA COATZINTLA', 
-                ' 2️⃣ CIMA TIHUATLAN',
-                ' 3️⃣ CIMA LOPEZ',
-                ' 4️⃣ CIMA DIVISIÓN',
-            ]
-            ,
-            null,
-            null,
-            [flow8021,flow11215,flow3620,flow12712]
-            ,
-            )
-
-
-
-
-
 const flow7 = addKeyword('7')
     .addAnswer( 'Hola para iniciar el proceso de reclutamiento, deberás acudir a nuestro departamento de recursos humanos dirigido a la Lic. Alma Sanchez con la siguiente documentación:')
     .addAnswer(
@@ -164,7 +141,7 @@ const flow7 = addKeyword('7')
         ])
 
     .addAnswer('le comparto la dirección en la siguiente liga https://goo.gl/maps/n8xDo8H6qBnoRdWz5')
-    .addAnswer('Lic. Alma Sánchez 7822238280 , correo gdn.administracion@grupogdh.com')
+    .addAnswer('puede enviar mensaje o llamar al numero 7821758152 , correo gdn.administracion@grupogdh.com')
     .addAnswer('Que tengas un buen día')
     .addAnswer([
         ' ',
@@ -176,123 +153,78 @@ const flow7 = addKeyword('7')
     )
 
 
-
-
-
 const flow8 = addKeyword('8')
-.addAnswer('Términos y Condiciones del Concurso "*Tu anécdota favorita como mamá*"')
+.addAnswer('Términos y Condiciones del GIVE AWAY para papá*"')
+.addAnswer('*TODOS PUEDEN PARTICIPAR*')   
+
     .addAnswer([
         '*1. Organizador del Concurso*',
-        '*•* El concurso "Tu anécdota favorita como mamá" es organizado por la gasolinera Cima del Tajín.',
-             ],{delay:500})
+        '*•* El Give Away es organizado por la gasolinera Cima del Tajín.',
+             ],{delay:100})
     .addAnswer([
         '*2. Elegibilidad*',
-        '*•* El Concurso está abierto solo a mamás.',
-        '*•* Los empleados del Organizador y sus familiares directos son elegibles para participar, excepto personal administrativo.',
-            ],{delay:550})
+        '*•* El Concurso está abierto al público en general.',
+    
+            ],{delay:110})
     .addAnswer([
         '*3. Duración del Concurso*',
-        '*•* El Concurso comienza el 03 de mayo 2024 y termina el 24 de mayo de 2024',
+        '*•* El Concurso comienza el 01 de junio de 2024 y termina el 29 de junio de 2024',
         '*•* Todas las participaciones deben ser recibidas antes de la fecha de finalización para ser consideradas.',
-        '*•* Fecha de anuncio del ganador 25 de mayo de 2024',
-            ],{delay:600})
+        '*•* Fecha de anuncio del ganador 29 de junio de 2024',
+            ],{delay:120})
     .addAnswer([
         '*4. Cómo Participar*',
-        '*•* Para participar, los concursantes deben enviar su "anécdota favorita como mamá" a través de WhatsApp antes de la fecha de finalización.',
-        '*•* Los concursantes deben compartirnos una foto de su familia con la que crean poder ganar.',
-        '*•*	Deberán seguir nuestro canal de WhatsApp, Facebook, Instagram y  TikTok incluidos en el siguiente enlace  https://atom.bio/cima_del_tajin',
-        '*•*	Los participantes pueden invitar a sus amigos a reaccionar y comentar en la publicación de su vehículo para aumentar sus probabilidades de ganar.',
-        '*•* Se prohíbe el uso de bots u otros métodos automatizados para participar. Cualquier uso de estos métodos resultará en la descalificación inmediata del participante.',
-            ],{delay:650})
+        '*•* 1.- Sigue Nuestra pagina de facebook y canal de WhatsApp 😜https://whatsapp.com/channel/0029Va9JGO22v1IrQUVgJ40L',
+        '*•* 2.- Reacciona y comparte esta publicación🥰',
+        '*•* 3.- etiqueta a tres de tus amigos en un solo comentario🤩',
+            ],{delay:130})
     .addAnswer([
         '*5. Criterios de Selección*',
-        '*•* Las anécdotas serán evaluadas por un panel de jueces seleccionados por el Organizador.',
-        '*•* Los criterios de evaluación incluyen la originalidad, la creatividad y la calidad de la anécdota.',
-            ],{delay:700})
+        '*•* Los ganadores se daran a conocer en un live realizado el día de la finalización del concurso',
+        
+            ],{delay:140})
     .addAnswer([
         '*6. Uso del Material Enviado*',
-        '*•* Al enviar una anécdota, los participantes otorgan al Organizador el derecho no exclusivo, transferible y libre de regalías para usar, reproducir, modificar, publicar, distribuir y mostrar su anécdota en cualquier medio de comunicación.',
-        '*•* Al participar enviando su fotografía, los participantes autorizan de manera expresa al organizador a hacer uso del derecho de uso de imagen.',
-        '*•* El participante es responsable de contar con la autorización de sus familiares que aparezcan en la imagen, en caso de controversia con terceros, el participante dejará en paz y salvo al organizador',
-        '*•* Los participantes declaran y garantizan que el contenido enviado es original y no infringe los derechos de autor ni los derechos de terceros.',
-            ],{delay:750})
+        '*•* Los participantes otorgan al Organizador el derecho no exclusivo, transferible y libre de regalías para usar, reproducir, modificar, publicar, distribuir y mostrar la información en cualquier medio de comunicación.',
+        '*•* Los participantes autorizan de manera expresa al organizador a hacer uso del derecho de uso de imagen.',
+        '*•* El participante es responsable de contar con la autorización de sus amigos que aparezcan en el post, en caso de controversia con terceros, el participante dejará en paz y salvo al organizador',
+        
+            ],{delay:150})
     .addAnswer([
         '*7. Premios*',
-        '*•* 1er lugar: Una smart tv de 32 pulgadas.',
-        '*•* 2do lugar: $1,000.00 pesos en vales de despesa de la canasta basica (No aplica cerveza, cigarros o licores) para canjear en sucursales Hi Bye',
-        '*•* 3er lugar: $500.00 pesos en vales de despesa de la canasta basica (No aplica cerveza, cigarros o licores) para canjear en sucursales Hi Bye',
-        '*•* Los ganadores serán notificados a través de WhatsApp y deben responder dentro de 1 día para reclamar su premio.',
-            ],{delay:800})
+        '*•* Un Galaxy Wach 4 SM-R860.',
+       
+            ],{delay:160})
     .addAnswer([
         '*8. Privacidad*',
         '*•* El Organizador recopilará y tratará los datos personales de los participantes de acuerdo con su política de privacidad.'
-            ],{delay:850})
+            ],{delay:170})
     .addAnswer([
         '*9. Aceptación de los Términos y Condiciones*',
         '*•* Al participar en el Concurso, los participantes aceptan estos términos y condiciones.',
         '*•* El Organizador se reserva el derecho de modificar estos términos y condiciones en cualquier momento y a su entera discreción.',
-            ],{delay:900})
+            ],{delay:180})
    
     .addAnswer([
         ' ',
         '_¿Quieres conocer todos nuestros servicios?_, escribe *MENU*',
         ' ',
-            ],{delay:920})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            ],{delay:190})
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const flowPrincipal = addKeyword(['bien dia','hola buen','bue','tarde','dias','Vi esto en Facebook...',
+const flowsecundario = addKeyword(['bien dia','Hola','buenos dias','buenas tardes','buenas noches','hola buen','bue','tarde','dias','Vi esto en Facebook...',
     'podrías darme más información de...','me enviarían más','quiero chatear con alguien','quiero empleo',
-    'Quiero Saber de todos tus servicios...','quiero Facturar por WhatsApp'])
+    'Quiero Saber de todos tus servicios...','terminos','Condiciones'])
         
-        //.addAnswer('¡Hola! Sabes quienes ganaron en nuestra rifa',{delay:500})
-        //.addAnswer('Consultalo en nuestro Facebook 👇🏻👇🏻👇🏻',{delay:550})
-        //.addAnswer('https://atom.bio/cima_del_tajin',{delay:600})
-        //.addAnswer(
-            //[
-                //'---------- *CIMA DEL TAJÍN* ----------',
-                //'*TU GASOLINERA DE CONFIANZA*',
-                //'Bienvenido a << _*CIMAWHATS*_ >>',
-                //'*Soy tu Asistente Virtual* 🧐',
-                //'*¿En que puedo ayudarte?🤔*', 
-            //])
-  
             .addAnswer(
-                [   
+                [  
                   
-                    '*Cima del Tajín* Tu Asistente virtual.',
-                    '-¡Hola! Soy Nimbe tu asistente virtual, para ayudarte a realizar tu factura por favor enviame:',
+                    '*Hola soy "Nimbe"* Tu Asistente virtual.',
+                    'Bienvenido a _CimaWhats_',
+                    //'Bienvenido a _CimaWhats_, Consulta como puedes participar en nuestro *Give Away Para Papá* en la opción 8 o en https://atom.bio/cima_del_tajin',
                     ' ',
                     '*¿En que puedo ayudarte? escribe una opción 🤔*',
                     ' ',
@@ -306,48 +238,188 @@ const flowPrincipal = addKeyword(['bien dia','hola buen','bue','tarde','dias','V
                ' 5️⃣ *Sugerencias o Queja*',
                ' 6️⃣ *Localiza tu estación*',
                ' 7️⃣ *Informes de vacantes*',
-               ///' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*', ///
+               //' 8️⃣ *⭐"GIVE AWAY PARA PAPÁ"⭐*', 
                ///' 9️⃣ *Terminos y condiciones Presume tu Nave*', 
               
             ],
-            { media: 'https://i.imgur.com/vWO6Ffn.png' },
-            {delay:2000},
+            { media: 'https://i.imgur.com/SA2Zv9o.png' },
+            null,
             [flow1,flow2,flow3,flow4,flow5,flow6,flow7,flow8]
             ,)
             
 /////////////////////////////////////////////////////////////////////SUB MENU ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+const flowPrincipal = addKeyword('Facturar por WhatsApp')
+            .addAnswer( 
+            [
+                
+                '*-¡Hola! Soy Nimbe tu asistente virtual*, para ayudarte a realizar tu factura por favor enviame:',
+                ' ',
+                '- Una foto de tu ticket 📝',
+                '- Una foto de tu baucher 📄',
+                '- Constancia fiscal actualizada 🧾',
+                '- y un correo electronico 📧',
+                '- Uno de nuestros asesores te apoyara lo más rápido posible, gracias 🧑🏼‍🔧',
+                '- agradecemos su preferencia',
+                '- Tiempo de espera *30 min*',
+                ' ',
+                ' ',
+                '⭐Necesita algo más escriba *MENU*⭐',
+            ],
+            { media: 'https://i.imgur.com/9INS0L7.png' },
+            null,
+            )
 
+          
 
 /////////////////////////////////////////////////////////////////////SUB MENU ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+const flowmenu = addKeyword('menu')
+        
+            .addAnswer(
+                [   
+                  
+                    '*Hola soy "Nimbe"* Tu Asistente virtual.',
+                    'Bienvenido a _CimaWhats_',
+                    ' ',
+                    '*¿En que puedo ayudarte? escribe una opción 🤔*',
+                    ' ',
+                    ' ',
+                    
+            
+               ' 1️⃣ *Facturación por WhastApp*', 
+               ' 2️⃣ *Facturación en linea*',
+               ' 3️⃣ *Correcciónes de facturas*', 
+               ' 4️⃣ *Contacto*',
+               ' 5️⃣ *Sugerencias o Queja*',
+               ' 6️⃣ *Localiza tu estación*',
+               ' 7️⃣ *Informes de vacantes*',
+               //' 8️⃣ *⭐"GIVE AWAY PARA PAPÁ"⭐*', 
+               ///' 9️⃣ *Terminos y condiciones Presume tu Nave*', 
+              
+            ],
+            { media: 'https://i.imgur.com/VhTREMv.png' },
+            null,
+            [flow1,flow2,flow3,flow4,flow5,flow6,flow7,flow8]
+            ,)
 
-const flowsecundario = addKeyword('menu')
-.addAnswer('*¿En que más puedo ayudarte?* 🧐',{delay:400})
-.addAnswer('Escribe una opción',{delay:450})
-.addAnswer('Estamos para servite',{delay:500})
-.addAnswer(                                                              
+
+
+///////////////////////////////////////////////////////////**FLOW para hacer pruebas **/////////////////////////////////////////////////////////////
+
+const flowpruebas = addKeyword('claveactivador')
+            .addAnswer(
+                [
+                '-¡Hola! Soy Nimbe tu asistente virtual, para ayudarte a realizar tu factura por favor enviame:',
+                ' ',
+                '* Una foto de tu ticket 📝',
+                '* Una foto de tu baucher 📄',
+                '* Constancia fiscal actualizada 🧾',
+                '* y un correo electronico 📧',
+                '* Uno de nuestros asesores te apoyara lo más rápido posible, gracias 🧑🏼‍🔧',
+                '* Tiempo de espera 30 min',
+                ' ',
+                '"Vota" por tu favorito en nuestro concurso de trajes tipicos picale a unos de los siguientes linck ',
+                ' ',
+                'Canal de WhatsApp https://whatsapp.com/channel/0029Va9JGO22v1IrQUVgJ40L',
+                'Comunidad de WhatsApp https://chat.whatsapp.com/JWGm47795PL41pnE7Mil3p',
+                'Facebook Cimadeltajín https://www.facebook.com/cimadeltajin/',
+                ' ',
+                '⭐Necesita algo más escriba MENU⭐'
+                ],
+                { media: 'https://media.giphy.com/media/WhBeVM648P3DOktint/giphy.mp4' },
+                null,
+            )
+
+const flowpruebas2 = addKeyword('codigo2')
+            .addAnswer(
+                [
+                '-¡Hola! Soy Nimbe tu asistente virtual, para ayudarte a realizar tu factura por favor enviame:',
+                ' ',
+                '* Una foto de tu ticket 📝',
+                '* Una foto de tu baucher 📄',
+                '* Constancia fiscal actualizada 🧾',
+                '* y un correo electronico 📧',
+                '* Uno de nuestros asesores te apoyara lo más rápido posible, gracias 🧑🏼‍🔧',
+                '* Tiempo de espera 30 min',
+                ' ',
+                '"Vota" por tu favorito en nuestro concurso de trajes tipicos picale a unos de los siguientes linck ',
+                ' ',
+                'Canal de WhatsApp https://whatsapp.com/channel/0029Va9JGO22v1IrQUVgJ40L',
+                'Comunidad de WhatsApp https://chat.whatsapp.com/JWGm47795PL41pnE7Mil3p',
+                'Facebook Cimadeltajín https://www.facebook.com/cimadeltajin/',
+                ' ',
+                '⭐Necesita algo más escriba MENU⭐'
+                ],
+                { media: 'https://i.imgur.com/bnobM62.png' },
+                null,
+            )
+
+
+
+
+
+
+///////////////////////////////////////////////////////////**FLOW DE RESPUESTA AUTOMATICA**/////////////////////////////////////////////////////////////
+
+
+const flowTerminos = addKeyword('Terminos','condiciones')
+.addAnswer('Términos y Condiciones del GIVE AWAY para papá*"')
+.addAnswer('*TODOS PUEDEN PARTICIPAR*')   
+
+    .addAnswer([
+        '*1. Organizador del Concurso*',
+        '*•* El Give Away es organizado por la gasolinera Cima del Tajín.',
+             ],{delay:100})
+    .addAnswer([
+        '*2. Elegibilidad*',
+        '*•* El Concurso está abierto al público en general.',
     
-    [
-       ' 1️⃣ *Facturación por WhastApp*', 
-       ' 2️⃣ *Facturación en linea*',
-       ' 3️⃣ *Correcciónes de facturas*',
-       ' 4️⃣ *Contacto*',
-       ' 5️⃣ *Sugerencias o Queja*',
-       ' 6️⃣ *Localiza tu estación*',
-       ' 7️⃣ *Informes de vacantes*',
-       ///' 8️⃣ *⭐Terminos "Tu anecdota como mamá"⭐*', 
-       ///' 9️⃣ *Terminos y condiciones Presume tu Nave*', 
-
-        ],
-        null,
-        null,
-        [flow1,flow2,flow3,flow4,flow5,flow6,flow7,flow8])
-
-
-    ///////////////////////////////////////////////////////////**FLOW DE RESPUESTA AUTOMATICA**/////////////////////////////////////////////////////////////
-
-
+            ],{delay:110})
+    .addAnswer([
+        '*3. Duración del Concurso*',
+        '*•* El Concurso comienza el 01 de junio de 2024 y termina el 26 de juio de 2024',
+        '*•* Todas las participaciones deben ser recibidas antes de la fecha de finalización para ser consideradas.',
+        '*•* Fecha de anuncio del ganador 26 de mayo de 2024',
+            ],{delay:120})
+    .addAnswer([
+        '*4. Cómo Participar*',
+        '*•* 1.- Sigue Nuestra pagina de facebook y canal de WhatsApp 😜https://whatsapp.com/channel/0029Va9JGO22v1IrQUVgJ40L',
+        '*•* 2.- Reacciona y comparte esta publicación🥰',
+        '*•* 3.- etiqueta a tres de tus amigos en un solo comentario🤩',
+            ],{delay:130})
+    .addAnswer([
+        '*5. Criterios de Selección*',
+        '*•* Los ganadores se daran a conocer en un live realizado el día de la finalización del concurso',
+        
+            ],{delay:140})
+    .addAnswer([
+        '*6. Uso del Material Enviado*',
+        '*•* Los participantes otorgan al Organizador el derecho no exclusivo, transferible y libre de regalías para usar, reproducir, modificar, publicar, distribuir y mostrar la información en cualquier medio de comunicación.',
+        '*•* Los participantes autorizan de manera expresa al organizador a hacer uso del derecho de uso de imagen.',
+        '*•* El participante es responsable de contar con la autorización de sus amigos que aparezcan en el post, en caso de controversia con terceros, el participante dejará en paz y salvo al organizador',
+        
+            ],{delay:150})
+    .addAnswer([
+        '*7. Premios*',
+        '*•* Un Galaxy Wach 4 SM-R860.',
+       
+            ],{delay:160})
+    .addAnswer([
+        '*8. Privacidad*',
+        '*•* El Organizador recopilará y tratará los datos personales de los participantes de acuerdo con su política de privacidad.'
+            ],{delay:170})
+    .addAnswer([
+        '*9. Aceptación de los Términos y Condiciones*',
+        '*•* Al participar en el Concurso, los participantes aceptan estos términos y condiciones.',
+        '*•* El Organizador se reserva el derecho de modificar estos términos y condiciones en cualquier momento y a su entera discreción.',
+            ],{delay:180})
+   
+    .addAnswer([
+        ' ',
+        '_¿Quieres conocer todos nuestros servicios?_, escribe *MENU*',
+        ' ',
+            ],{delay:190})
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -371,7 +443,10 @@ const flowquejas = addKeyword('platicanos tu sugerencia o queja')
             ],
         null,
         null
+        
             )
+    
+
 
 
 
@@ -382,7 +457,7 @@ const flowquejas = addKeyword('platicanos tu sugerencia o queja')
 
     const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal,flowsecundario,flowquejas])
+    const adapterFlow = createFlow([flowPrincipal,flowsecundario,flowTerminos,flowmenu,flowpruebas,flowpruebas2])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
@@ -391,31 +466,8 @@ const flowquejas = addKeyword('platicanos tu sugerencia o queja')
         database: adapterDB,
     })
 
-    QRPortalWeb()
+    QRPortalWeb({port:8080})
 }
 
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
